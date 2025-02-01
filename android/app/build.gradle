@@ -11,8 +11,9 @@ if (keystorePropertiesFile.exists()) {
 }
 
 
+
 android {
-    namespace = "com.meminapp.voice_notes"
+    namespace = "com.example.voice_notes"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -48,8 +49,7 @@ android {
     buildTypes {
         release {
             signingConfig signingConfigs.release
-            minifyEnabled false
-            shrinkResources false
+        
         }
     }
 }
